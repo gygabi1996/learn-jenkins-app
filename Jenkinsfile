@@ -55,7 +55,7 @@ pipeline {
                 stage('E2E') {
                     agent {
                         docker {
-                            build('my-playwright')
+                            image 'my-playwright'
                             reuseNode true
                         }
                     }
